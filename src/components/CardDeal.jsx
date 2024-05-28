@@ -1,6 +1,12 @@
-const CardDeal = () => {
+const CardDeal = ({feature}) => {
   return (
-    <div>CardDeal</div>
-  )
-}
-export default CardDeal
+    <div className="flex">
+      {/* <img src={feature.icon} alt={feature.title} />
+      <div className="text text-white">
+        <span className="title text-[16px] text-dimWhite">{feature.title}</span>
+        <p>{feature.content}</p>
+      </div> */}
+    </div>
+  );
+};
+export default CardDeal;
