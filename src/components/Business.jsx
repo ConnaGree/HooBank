@@ -4,6 +4,8 @@ import CardDeal from "./CardDeal";
 import { star, send, shield } from "../assets";
 
 const Business = () => {
+  console.log("features:", features); // Log the features array for debugging
+  
   return (
     <section className="flex items-center justify-between lg:mt-20 mt-15 leading-20">
       <div className="left__section flex-1">
@@ -21,9 +23,12 @@ const Business = () => {
       </div>
 
       <div className="right__section flex-1">
-          <CardDeal feature={features[0]} key={features[0].id} icon={star}/>
+        {features.map((feature, index) => (
+          <CardDeal feature={feature} key={index} />
+        ))}
       </div>
     </section>
   );
 };
+
 export default Business;
