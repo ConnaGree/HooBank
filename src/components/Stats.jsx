@@ -7,9 +7,9 @@ const Stats = () =>  {
   const [tickCounter, setTickCounter] = useState(0);
 
     return (
-      <div className="stats p-2 w-full flex flex-wrap justify-between items-center">
+      <div className={`${styles.boxWidth} stats p-2 w-full flex flex-wrap justify-center gap-[1rem] lg:justify-between items-center`}>
         {stats.map((stat, index) => (
-          <div className="stat flex items-center w-[33%] gap-2" key={stat.id}>
+          <div className={`stat flex mb-5 items-center gap-2`} key={stat.id}>
             <span className={`text-[16px] lg:text-[40px] font-bold text-white font-poppins`}>
               {stat.value}
             </span>

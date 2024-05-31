@@ -8,6 +8,7 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import BusinessFeatures from "./BusinessFeatures";
 
 export {
   NavBar,
@@ -20,4 +21,5 @@ export {
   Footer,
   Testimonials,
   Hero,
+  BusinessFeatures,
 };
