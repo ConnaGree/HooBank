@@ -4,10 +4,9 @@ import BusinessFeatures from "./BusinessFeatures";
 import { star, send, shield } from "../assets";
 
 const Business = () => {
-  console.log("features:", features); // Log the features array for debugging
   
   return (
-    <section className="flex w-full flex-wrap items-flex-start justify-between lg:mt-20 leading-20">
+    <section className="flex w-full flex-wrap items-flex-start justify-between lg:mt-20 leading-20" id="features">
       <div className="left__section w-full max-w-[600px] lg:w-[50%] my-5">
         <h1
           className={`text-[20px] font-semibold lg:text-[30px] text-white font-poppins`}
